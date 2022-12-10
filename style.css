@@ -82,7 +82,7 @@ body {
 }
 .right-panel {
   background-color: var(--white);
-  grid-column: 1/4;
+  grid-column: 1/5;
   grid-row: 2/4;
   border: 2px dotted red;
   display: flex;
@@ -99,6 +99,21 @@ input[type="text"]:focus{
 }
 input[name*="exp_date"] {
   width: 20%;
+}
+.form-controls{
+  display: flex;
+  flex-direction: column;
+}
+.fl-row{
+  flex-direction: row;
+}
+label{
+  font-size: 0.95rem;
+  margin-left: 0.62rem;
+  text-transform: uppercase;
+}
+#exp_date_id{
+  width: 53%;
 }
 @media screen and (min-width: 962px) {
   #main-grid {

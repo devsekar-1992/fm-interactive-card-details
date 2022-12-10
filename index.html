@@ -39,7 +39,7 @@
       </div>
       <div class="right-panel">
         <form>
-          <div>
+          <div class="form-controls">
             <label for="card_name">CardHolder Name</label>
             <input
               type="text"
@@ -49,7 +49,7 @@
             />
           </div>
 
-          <div>
+          <div class="form-controls">
             <label for="card_no">Card Number</label>
             <input
               type="text"
@@ -58,14 +58,31 @@
               placeholder="e.g 1234 5678 9123 0000"
             />
           </div>
-          <div>
-            <label for="exp_date_month">Expiry Date</label>
-            <input type="text" name="exp_date_month" id="" placeholder="MM" />
-            <input type="text" name="exp_date_year" id="" placeholder="YY" />
+          <div class="form-controls fl-row">
+            <div id="exp_date_id">
+              <label for="exp_date_month">Exp. Date (MM/YY)</label>
+              <div class="form-controls fl-row">
+                <input
+                  type="text"
+                  name="exp_date_month"
+                  id=""
+                  placeholder="MM"
+                />
+                <input
+                  type="text"
+                  name="exp_date_year"
+                  id=""
+                  placeholder="YY"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="cvv">CVC</label>
+              <input type="text" name="cvv_no" id="" placeholder="e.g 123" />
+            </div>
           </div>
           <div>
-            <label for="cvv">CVC</label>
-            <input type="text" name="cvv_no" id="" placeholder="e.g 123" />
+            <button>Confirm</button>
           </div>
         </form>
       </div>
