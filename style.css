@@ -47,6 +47,10 @@ body {
   align-items: center;
   width: 82%;
 }
+#cvv span{
+  color: white;
+  font-size: 0.75rem;
+}
 #front_side_card {
   min-width: 57%;
   max-width: 82%;
@@ -84,7 +88,6 @@ body {
   background-color: var(--white);
   grid-column: 1/5;
   grid-row: 2/4;
-  border: 2px dotted red;
   display: flex;
   align-self: center;
 }
@@ -114,6 +117,18 @@ label{
 }
 #exp_date_id{
   width: 53%;
+}
+.btn-container{
+  text-align: center;
+}
+.btn{
+  color: white;
+  background-color: hsl(278, 68%, 11%);
+  width: calc(100% - 20px);
+  padding: 1.1rem;
+  border-radius: 0.501rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 962px) {
   #main-grid {
